@@ -1,0 +1,189 @@
+@import "./_colors.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+    background-color: $background;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+.image-side{
+    width:50%;
+    height: 100vh;
+    justify-content:end;
+}
+
+
+.form-side{
+    width: 50%;
+    height: 100vh
+}
+
+@media screen and (max-width:720px){
+    .image-side{
+       display: none;
+    }
+
+    .form-side{
+        width: 100%;
+        height: 100vh
+    }
+}
+.formulario{
+    width: 73.2%;
+    margin:0 auto;
+
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+
+footer img{
+    width: 7.25rem;
+    height: 1.75rem;
+}
+
+main{
+    background-color: $form-background;
+    width: 80%;
+    margin: 0 auto; 
+    border-radius: 0.5rem;
+    margin-top: 7rem;
+}
+
+.login{
+    padding-top: 3rem;
+    display: flex;
+    text-align: center;
+}
+
+.login img{
+    margin-right: 0.5rem;
+    margin-bottom:0.25rem;
+}
+.login h1{
+    margin-bottom:0.25rem;
+    margin-left: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight:600;
+    display: block;
+    color: $text-title;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-base;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.item-form, .remember{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;  
+    color: $text-base;
+}
+.form-item{
+    display:block;
+    margin-bottom: 0.5rem;  
+}
+
+.remember{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.item-form input[type=text],input[type=password]{
+    background-color: transparent;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    height: 2.75rem;
+    width:100%;
+    border: 2px solid $stroke;
+    border-radius:0.5rem;
+    padding-left:0.75rem;
+    color: #A9AFB9;
+
+}
+
+.item-form input[type=text]:focus,input[type=password]:focus{
+    border: 1px solid $primary-color;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+input[type=checkbox]{
+    outline: 0;
+    background: rgba(40,40,40,0.2);;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid $stroke;
+    border-radius:0.5rem;
+    margin-right:0.5rem;
+}
+.bottom-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:1.25rem ;
+}
+
+.forgot span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: $primary-color;
+}
+
+input[type=submit]{
+    outline: 0;
+    width:100%;
+    background-color: $primary-color;
+    text-align: center;
+    border:none;
+    border-radius: 0.25rem;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #473404;
+    transition: 0.2s ease; 
+    margin-bottom:1rem;
+}
+
+input[type=submit]:hover{
+    opacity: 0.75;
+}
+
+.register{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $primary-color;
+    display:flex;
+    justify-content: center;    
+    padding-bottom: 3rem;
+}
